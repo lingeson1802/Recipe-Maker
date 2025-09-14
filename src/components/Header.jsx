@@ -7,7 +7,7 @@ export default function Header({ toggleSidebar }) {
       <button onClick={toggleSidebar} className="text-2xl text-[#ED8A42]">
         <PiList />
       </button>
-      <Link to="/" className="text-xl font-bold text-[#ED8A42] cursor-pointer">Recipe.now</Link>
+      <Link to="/" className="text-xl font-bold text-[#ED8A42] cursor-pointer">RECIPE.NOW</Link>
       <div className="flex gap-4 text-2xl text-[#48b85c]">
         <Link to="/saved">
           <PiBookmarkSimple className="cursor-pointer hover:text-[#f10100]" />
