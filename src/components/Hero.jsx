@@ -86,7 +86,7 @@ const Hero = ({ onSearch }) => {
   type="text"
   placeholder="Search recipes by name, ingredient, or cuisine..."
   className="w-full pl-10 pr-4 py-3 rounded-full bg-white/90 focus:outline-none 
-             focus:ring-4 focus:ring-[#ED8A42] 
+             focus:ring-0 focus:shadow-[0_0_10px_4px_rgba(237,138,66,0.7)]
              focus:animate-pulse 
              transition-all duration-300
              shadow-lg"

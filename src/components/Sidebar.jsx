@@ -55,7 +55,7 @@ export default function Sidebar({ isOpen, toggleSidebar, onSelect }) {
 
   return (
     <aside
-      className={`z-50 fixed top-0 left-0 h-full w-64 bg-white/90 backdrop-blur-md border-r border-gray-300 p-6 transform transition-transform duration-300 ${
+      className={`z-50 fixed top-0 left-0 h-full w-64 bg-white/30 backdrop-blur-md border-r border-gray-300 p-6 transform transition-transform duration-300 ${
         isOpen ? "translate-x-0" : "-translate-x-full"
       }`}
     >
@@ -70,14 +70,14 @@ export default function Sidebar({ isOpen, toggleSidebar, onSelect }) {
       {Object.entries(subgroups).map(([groupName, subcats]) => (
         <div key={groupName} className="mb-4">
           <p className="font-semibold text-gray-700">{groupName}</p>
-          <ul className="ml-2 space-y-1">
+          <ul className="ml-2 space-y-1 font-semibold">
             {subcats.map((subcat) => (
               <li
                 key={subcat}
                 onClick={() => handleClick("category", subcat)}
                 className={`cursor-pointer px-2 py-1 rounded-md transition-colors ${
                   activeSubcategory === subcat
-                    ? "bg-indigo-100 text-indigo-800 font-semibold"
+                    ? "bg-[#ED8A42]/30 text-[#f10100] font-semibold"
                     : "hover:bg-gray-200 hover:text-gray-900"
                 }`}
               >
